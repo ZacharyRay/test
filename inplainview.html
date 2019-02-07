@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>InPlainView</title>
+<meta charset="utf-8" />
+<meta name="description" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Neuton" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="inplainview.css">
+</head>
+
+    <body>
+    <header>
+        
+        <!-- burger menu. Inspired by https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar -->
+        
+    <div class="topnav">
+        <a href="inplainview.html" class="active"><br></a>
+        <div id="myLinks">
+            <a href="inplainview.html">Home</a>
+            <a href="#portfolio" onclick="scrollWin()">Portfolio</a>
+            <a href="about.html">About</a>
+            <a href="about.html">Contact</a>
+        </div>
+  
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <p>&#9776;
+            </p>
+        </a>
+    </div>
+
+<!-- Javascript from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar -->
+
+        <script>
+            function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+    x.style.display = "none";
+    } else {
+    x.style.display = "block";
+    }
+            }
+        </script>
+
+<!-- video background, welcome, scroll button. -->
+
+        <article class="box_video_front">
+            <video src="backgroundvideo2.mp4" autoplay muted loop class="videofront" title="IPV logo 700X500.png">
+            </video>
+            <h1>In Plain View</h1>
+            
+                <img src="arrow_down.png" alt="arrowdownimage" onclick="scrollWin()">
+          
+            
+            <!-- Javascript from https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_win_scrollby -->
+
+            <script>
+            function scrollWin() {
+                window.scrollBy(0, 1000);
+            }
+            </script>
+            
+        </article>  
+    </header>
+        
+<!-- Intro, info boxes --> 
+    
+    <main>
+        <h2>Welcome <br><br> In Plain View is a portfolio showcasing Zachary Aagesen’s work as a multimedia designer.</h2>
+        <div>
+            <a href="animation&3d.html">
+            <img src="Animation&3D_web.jpg" class="box_one_image" alt="animation&3Dimage">
+        </a>
+        </div>
+        <div>
+            <a href="ar&vr.html">
+            <img src="AR&VR_web.jpg" class="box_two_image" alt="ar&vrimage">
+            </a>
+        </div>
+        <a href="video.html">
+        <img src="videowork_front_web.jpg" class="box_three_image" alt="videoimage">
+        </a>
+        <a href="audio.html">
+        <img src="audio_web.jpg" class="box_four_image" alt="audioimage">
+        </a>
+    </main>
+        
+<!-- Footer -->
+        
+        <footer>
+            <div>
+                <a href="https://www.facebook.com/zacharyRayMusic/">
+                    <img src="facebookicon50x50.png" alt="facebooklink" class="facebookimage">
+                </a>
+            </div>    
+            <div>
+                <a href="https://www.instagram.com/zacharyraymusic/">
+                    <img src="Instagramicon50x50.png" alt="instagramlink" class="instagramimage">
+                </a>
+            </div>
+            <img src="zfooterbreaker.png" class="breaker" alt="footerbreaker">
+            <p class="footertext">Contact: <br> Email: zacharyaagesen@gmail.com <br> Phone: +4522303339</p>
+        </footer>
+
+    </body>
