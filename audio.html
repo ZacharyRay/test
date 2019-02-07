@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>InPlainView</title>
+<meta charset="utf-8" />
+<meta name="description" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Neuton" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="inplainview.css">
+</head>
+
+    <body>
+    <header>
+        
+        <!-- burger menu. Inspired by https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar -->
+        
+    <div class="topnav">
+        <a href="inplainview.html" class="active"><br></a>
+        <div id="myLinks">
+            <a href="inplainview.html">Home</a>
+            <a href="inplainview.html">Portfolio</a>
+            <a href="about.html">About</a>
+            <a href="about.html">Contact</a>
+        </div>
+  
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <p>&#9776;
+            </p>
+        </a>
+    </div>
+
+<!-- Javascript from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar -->
+
+        <script>
+            function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+    x.style.display = "none";
+    } else {
+    x.style.display = "block";
+    }
+            }
+        </script>
+            
+            <!-- Javascript from https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_win_scrollby -->
+
+            <script>
+            function scrollWin() {
+                window.scrollBy(0, 1000);
+            }
+            </script>
+              
+    </header>
+        
+<!-- Intro, info boxes --> 
+    
+    <main>
+        <h2>Audio<br><br> Showcasing recording and mixing skills</h2>
+        <div class="musictext">Zachary Ray - Insane Obsession </div>
+<iframe class="musicbox" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/333932212&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+<div class="siskatext">Siska - Viola På 2. sal</div>
+<iframe class="siskabox" width="560" height="315" src="https://www.youtube.com/embed/Jub34PZl_Og" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </main>
+        
+<!-- Footer -->
+        
+        <footer>
+            <div>
+                <a href="https://www.facebook.com/zacharyRayMusic/">
+                    <img src="facebookicon50x50.png" alt="facebooklink" class="facebookimage">
+                </a>
+            </div>    
+            <div>
+                <a href="https://www.instagram.com/zacharyraymusic/">
+                    <img src="Instagramicon50x50.png" alt="instagramlink" class="instagramimage">
+                </a>
+            </div>
+            <img src="zfooterbreaker.png" class="breaker">
+            <p class="footertext">Contact: <br> Email: zacharyaagesen@gmail.com <br> Phone: +4522303339</p>
+        </footer>
+
+    </body>
